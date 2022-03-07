@@ -14,7 +14,7 @@ class StackList{
                            // "getter" for node item | 
                            //const following the parantheses indicates "const-correctness". 
                            // This guarantees that objects will not be mutated(modified) by this function "nodeItem()".
-                           T nodeItem () const{/*ToDo*/} - here is the aforementioned getter 
+                           T nodeItem () const{/*ToDo } - here is the aforementioned getter */
 
                     private:
                             T nodeItem_; // data item associated with a single node instance
