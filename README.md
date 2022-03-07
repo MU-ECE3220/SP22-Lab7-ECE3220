@@ -8,16 +8,16 @@ template<typename T> // could also be template<class whatever>
 class StackList{
         public :
                 struct StackNode{ // we define the StackNode class here so that it may use our template T.
-                   // public space of StackNode   
-                   Node(T nodeItem){//ToDo}
-                   Node* next;
-                   // "getter" for node item | 
-                   //const following the parantheses indicates "const-correctness". 
-                   // This guarantees that objects will not be mutated(modified) by this function "nodeItem()".
-                   T nodeItem () const{/*ToDo*/} - here is the aforementioned getter 
+                           // public space of StackNode   
+                           Node(T nodeItem){//ToDo}
+                           Node* next;
+                           // "getter" for node item | 
+                           //const following the parantheses indicates "const-correctness". 
+                           // This guarantees that objects will not be mutated(modified) by this function "nodeItem()".
+                           T nodeItem () const{/*ToDo*/} - here is the aforementioned getter 
 
-                private:
-                    T nodeItem_; // data item associated with a single node instance
+                    private:
+                            T nodeItem_; // data item associated with a single node instance
                 
                 }; // end class StackNode
                  // continuing with class "StackList"
