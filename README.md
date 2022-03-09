@@ -9,8 +9,8 @@ class StackList{
         public :
                 struct StackNode{ // we define the StackNode class here so that it may use our template T.
                            // public space of StackNode   
-                           Node(const T& nodeItem){//ToDo}
-                           Node* next;
+                           StackNode(const T& nodeItem){//ToDo}
+                           StackNode* next;
                            // "getter" for node item | 
                            //const following the parantheses indicates "const-correctness". 
                            // This guarantees that objects will not be mutated(modified) by this function "nodeItem()".
@@ -21,12 +21,12 @@ class StackList{
                 
                 }; // end class StackNode
                  // continuing with class "StackList"
-                List(){
+                StackList(){
                     head_->nodeItem_ = T{}; // initialize to default template value || whatever data type it assumes
                     /*ToDo More in here*/
                 }
 
-                List(const T& nodeItem){ // ToDo }
+                StackList(const T& nodeItem){ // ToDo }
                 bool isEmpty(){ // ToDO - returns true if stack is empty}
                 void push_back(const T& nodeItem) { // ToDO - assigns element at the top of the stack}
                 void pop(){ // ToDo deletes element at the top of the stack}
