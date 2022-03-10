@@ -33,6 +33,8 @@ class StackList{
                 void print_stack(){ /*ToDo*/ }
                 void clear(){/*ToDo -- pops all items off the stack}
                 int size() {/*ToDo -- returns the size of the stack*/}
+         private : 
+                StackNode* head_;
 };
 
 
